@@ -1,6 +1,12 @@
 @import "ui-variables";
 @import "ui-mixins";
 
+atom-text-editor {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 12px;
+  line-height: 17px;
+}
+
 atom-text-editor[mini], atom-text-editor[mini]::shadow {
   color: lighten(@text-color, 15%);
   background-color: darken(@input-background-color, 1%);

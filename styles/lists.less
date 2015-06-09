@@ -6,6 +6,7 @@
   li:not(.list-nested-item),
   li.list-nested-item > .list-item {
     .text(normal);
+    text-shadow: none;
   }
 
   .generate-list-item-text-color(@class) {
@@ -29,7 +30,7 @@
 
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
-      color: darken(@color, 7%);
+      color: @color;
     }
   }
   .generate-list-item-status-color(@text-color-subtle, ignored);
@@ -126,4 +127,40 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   padding: 0 @component-padding;
   background: @background-color-highlight;
   box-shadow: 0 0 1px @base-border-color;
+}
+
+// icons (I can't get hold of the svgs for the phpstorm icons anyone who can let me know)
+
+.icon-repo {
+  &:before {
+    color: #c9a678;
+    content: "\f016";
+  }
+}
+
+.icon-file-directory {
+  &:before {
+    color: #c9a678;
+  }
+}
+
+.icon-file-text {
+  &:before {
+    color: #acacac;
+  }
+}
+
+// popover lists
+
+.select-list.popover-list {
+  background-color: #4c5051;
+}
+
+.popover-list .suggestion-description {
+  background-color: #404040;
+}
+
+.popover-list .suggestion-description-content,
+.popover-list .suggestion-description-more-link  {
+  font-size: 12px;
 }
