@@ -41,3 +41,19 @@ atom-text-editor, atom-text-editor::shadow {
     -webkit-box-shadow: -2px 0 10px 2px #222;
   }
 }
+
+// Give the default scrollbars some love
+::-webkit-scrollbar {
+  width: 11px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4c5052;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #686868;
+  box-shadow: 0 0 1px black inset;
+}
