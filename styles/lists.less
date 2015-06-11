@@ -135,14 +135,65 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
 .icon-repo {
   &:before {
     content: " ";
-    background: transparent url(atom://atom-storm-ui/images/folder.png) 50% 50%;
+    background: transparent url(atom://atom-storm-ui/images/folder.png);
+    background-position: 50% 50%;
   }
 }
 
 .icon-file-text {
   &:before {
     content: " ";
-    background: transparent url(atom://atom-storm-ui/images/any_type.png) 50% 50%;
+    background: transparent url(atom://atom-storm-ui/images/text.png);
+    background-position: 50% 50%;
+    background-repeat: none;
+    width: 16px;
+    height: 16px;
+  }
+
+  &[data-name$=".css"]:before {
+    background: transparent url(atom://atom-storm-ui/images/css.png);
+  }
+  &[data-name$=".less"]:before {
+    background: transparent url(atom://atom-storm-ui/images/less.png);
+  }
+  &[data-name$=".scss"]:before, {
+    background: transparent url(atom://atom-storm-ui/images/sass.png);
+  }
+
+  &[data-name$=".html"]:before {
+    background: transparent url(atom://atom-storm-ui/images/html.png);
+  }
+
+  &[data-name$=".json"]:before {
+    background: transparent url(atom://atom-storm-ui/images/json.png);
+  }
+
+  &[data-name$=".js"]:before {
+    background: transparent url(atom://atom-storm-ui/images/javaScript.png);
+  }
+
+  &[data-name$=".md"]:before {
+    background: transparent url(atom://atom-storm-ui/images/text.png);
+  }
+
+  &[data-name$=".yml"]:before {
+    background: transparent url(atom://atom-storm-ui/images/yml.png);
+    width: 15px;
+    height: 15px;
+  }
+
+  &[data-name$=".min.js"]:before {
+    background: transparent url(atom://atom-storm-ui/images/min.js.png);
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.icon-book {
+  &:before {
+    content: " ";
+    background: transparent url(atom://atom-storm-ui/images/text.png);
+    background-position: 50% 50%;
   }
 }
 

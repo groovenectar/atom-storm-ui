@@ -103,7 +103,58 @@
     .title {
       position: relative;
       z-index: 1;
-      padding-right: 10px
+      padding-left: 20px;
+
+      &:before {
+        content: " ";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        z-index: 5;
+        top: 4px;
+        left: 0;
+        background: transparent url(atom://atom-storm-ui/images/text.png);
+        background-position: 50% 50%;
+        background-repeat: none;
+      }
+
+      &[data-name$=".css"]:before {
+        background: transparent url(atom://atom-storm-ui/images/css.png);
+      }
+      &[data-name$=".less"]:before {
+        background: transparent url(atom://atom-storm-ui/images/less.png);
+      }
+      &[data-name$=".scss"]:before, {
+        background: transparent url(atom://atom-storm-ui/images/sass.png);
+      }
+
+      &[data-name$=".html"]:before {
+        background: transparent url(atom://atom-storm-ui/images/html.png);
+      }
+
+      &[data-name$=".json"]:before {
+        background: transparent url(atom://atom-storm-ui/images/json.png);
+      }
+
+      &[data-name$=".js"]:before {
+        background: transparent url(atom://atom-storm-ui/images/javaScript.png);
+      }
+
+      &[data-name$=".md"]:before {
+        background: transparent url(atom://atom-storm-ui/images/text.png);
+      }
+
+      &[data-name$=".yml"]:before {
+        background: transparent url(atom://atom-storm-ui/images/yml.png);
+        width: 15px;
+        height: 15px;
+      }
+
+      &[data-name$=".min.js"]:before {
+        background: transparent url(atom://atom-storm-ui/images/min.js.png);
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
