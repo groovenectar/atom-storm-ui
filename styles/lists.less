@@ -129,25 +129,26 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   box-shadow: 0 0 1px @base-border-color;
 }
 
-// icons (I can't get hold of the svgs for the phpstorm icons anyone who can let me know)
+// I managed to get the phpstorm icons but they are all in png files (sucks background-images it is)
 
+.icon-file-directory,
 .icon-repo {
   &:before {
-    color: #c9a678;
-    content: "\f016";
-  }
-}
-
-.icon-file-directory {
-  &:before {
-    color: #c9a678;
+    content: " ";
+    background: transparent url(atom://atom-storm-ui/images/folder.png) 50% 50%;
   }
 }
 
 .icon-file-text {
   &:before {
-    color: #acacac;
+    content: " ";
+    background: transparent url(atom://atom-storm-ui/images/any_type.png) 50% 50%;
   }
+}
+
+.list-group .icon::before,
+.list-tree .icon::before {
+  top: 3px;
 }
 
 // popover lists
