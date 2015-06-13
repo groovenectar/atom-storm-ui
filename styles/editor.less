@@ -43,17 +43,25 @@ atom-text-editor, atom-text-editor::shadow {
 }
 
 // Give the default scrollbars some love
-::-webkit-scrollbar {
-  width: 11px;
-  height: 10px;
-}
 
-::-webkit-scrollbar-track {
-  background-color: #4c5052;
-}
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 11px;
+    height: 10px;
+  }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #686868;
-  box-shadow: 0 0 1px black inset;
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+     background-color: #4c5052;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb {
+    background-color: #686868;
+    box-shadow: 0 0 1px black inset;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb:hover {
+    background-color: #686868;
+    box-shadow: 0 0 1px black inset;
+  }
 }
