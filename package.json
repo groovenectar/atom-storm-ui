@@ -1,7 +1,7 @@
 {
   "name": "atom-storm-ui",
   "theme": "ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A PHPStorm like UI",
   "repository": "https://github.com/mykz/atom-storm-ui.git",
   "license": "MIT",
