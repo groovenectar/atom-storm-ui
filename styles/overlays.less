@@ -30,6 +30,11 @@ atom-panel.modal, .overlay {
         background-color: @background-color-highlight;
       }
 
+      &:not(.selected) {
+        color: @text-color;
+        background-color: @overlay-border-color;
+      }
+
       .status.icon {
         float: right;
         margin-left: @component-icon-padding;
